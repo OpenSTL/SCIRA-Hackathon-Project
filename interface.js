@@ -2,20 +2,20 @@ var pg = require("pg");
 
 var db = new pg.Pool({
 
-    user: 'ciurpxndehzlss',
+    user: '',
 
-    host: 'ec2-50-16-196-57.compute-1.amazonaws.com/',
+    host: '',
 
-    database: 'd3f2eb63bcb14q',
+    database: '',
 
-    password: '778341d687d94a8b5e1f0c38d566dfd1155cda512f298bf905f6250a64d40d90',
+    password: '',
 
     port: 5432,
 
   });
 
 
-//Out
+
 db.query(`SELECT json_build_object(
   'type',       'Feature',
   'id',         r.ogc_fid,
